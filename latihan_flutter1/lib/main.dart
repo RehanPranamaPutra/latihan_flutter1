@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_flutter1/navbar/pag_tab_bar.dart';
 import 'package:latihan_flutter1/screen/page_mi.dart';
 
 void main() {
@@ -75,7 +76,17 @@ class HomeScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 14, color: Colors.white)
                 ),
               ),
-            )
+              
+            ),
+            MaterialButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => PageTabBar()
+              ));
+            },
+                color : Colors.orange,
+                child : Text ('Page Url Image', style: TextStyle(fontSize: 14, color: Colors.white))
+            ),
+            
           ],
         ),
       ),
